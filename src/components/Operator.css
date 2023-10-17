@@ -1,0 +1,47 @@
+.containerOperator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 300px;
+    background-color: black;
+    color: rgb(255, 173, 73);
+    font-family: 'Anton', sans-serif;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.335);
+    border: 1px solid white;
+}
+
+.containerDePara {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.containerDePara > ul{
+    background-color: rgba(255, 255, 255, 0.249);
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.containerForm input {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.moeda {
+    margin: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px white;
+}
+
+.containerPara {
+    display: flex;
+}

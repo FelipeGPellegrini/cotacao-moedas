@@ -1,0 +1,33 @@
+.containerHeader {
+    background-color: black;
+    color: rgb(255, 173, 73);
+    padding: 8px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    transition: all 1s;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.298);
+    
+}
+
+.containerHeader > h1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.238);
+}
+
+.containerHeader > h1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 173, 73); 
+    transition: width 0.3s; 
+}
+
+.containerHeader > h1:hover::before {
+    width: 100%;
+}
