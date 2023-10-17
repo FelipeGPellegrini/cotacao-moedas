@@ -6,7 +6,12 @@ const Operator = () => {
 
   const [de, setDe] = useState("")
   const [para, setPara] = useState("")
-  const [moeda, setValue] = useState()
+  const [moedaQuantity, setMoedaQuantity] = useState()
+
+  function startConvertion (e) {
+    e.preventDefault()
+    console.log(moedaQuantity)
+  }
 
   return (
     <div className="containerOperator">
@@ -68,7 +73,8 @@ const Operator = () => {
       </div>
       <div className="containerForm">
         <form>
-          <input type="number" placeholder={`Digite o valor em ${de}...`} value={value} onChange={(e) => setValue(e.target.value)}/>
+          <input type="number" placeholder={`Digite o valor em ${de}...`} value={moedaQuantity} onChange={(e) => setMoedaQuantity(e.target.value)}/>
+          <button onClick={startConvertion}>Converter</button>
         </form>
       </div>
     </div>
