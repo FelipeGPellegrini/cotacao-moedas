@@ -4,6 +4,8 @@ import { useState, useEffect } from "react"
 
 const Result = () => {
   let [dePara, setDePara] = useState("")
+  let [de, setDe] = useState("")
+  let [para, setPara] = useState("")
   let [value, setValue] = useState(0)
   let [arrayAPI, setArrayAPI] = useState("")
   let [valueConverted, setValueConverted] = useState(0)
@@ -12,7 +14,9 @@ const Result = () => {
   function saveData(de, para, value) {
     setDePara(`${de}-${para}`)
     setArrayAPI(`${de}${para}`)
+    setPara(para)
     setValue(value)
+    setDe(de)
   }
 
   useEffect(() => {
@@ -48,7 +52,11 @@ const Result = () => {
   return (
     <div>
       <Operator saveData={saveData} />
-      <h3>{valueConverted}</h3>
+      <div className="containerResult">
+          <h3 className="result">
+            {value} {de} equivale a {valueConverted.toFixed(2)} {para}
+          </h3>
+      </div>
     </div>
   )
 }
