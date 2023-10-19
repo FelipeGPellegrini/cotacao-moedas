@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Operator.css"
 
 
-const Operator = () => {
+const Operator = ({saveData}) => {
 
   const [de, setDe] = useState("")
   const [para, setPara] = useState("")
@@ -11,6 +11,7 @@ const Operator = () => {
   function startConvertion (e) {
     e.preventDefault()
     console.log(moedaQuantity)
+    saveData(de, para, moedaQuantity)
   }
 
   return (

@@ -1,13 +1,14 @@
 import './App.css'
 import Header from './components/Header'
-import Operator from './components/Operator'
+import Result from './components/Result'
 
 function App() {
+
 
   return (
     <>
     <Header/>
-    <Operator/>
+    <Result/>
     </>
   )
 }
