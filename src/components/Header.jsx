@@ -3,7 +3,7 @@ import "./Header.css"
 const Header = () => {
   return (
     <header className='containerHeader'>
-        <h1>Cotação</h1>
+        <h1>Conversor de Moedas</h1>
     </header>
    
   )

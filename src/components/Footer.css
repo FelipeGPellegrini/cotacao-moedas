@@ -1,0 +1,15 @@
+.containerFooter {
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.containerFooter a {
+    text-decoration: none;
+    color: black;
+}
+
+.containerFooter a:hover {
+    color: rgb(65, 65, 65);
+}

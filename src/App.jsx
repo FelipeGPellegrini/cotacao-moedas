@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Result from './components/Result'
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <Header/>
     <Result/>
+    <Footer/>
     </>
   )
 }

@@ -45,19 +45,18 @@ const Result = () => {
     if (data && arrayAPI) {
       const ask = data[arrayAPI] ? data[arrayAPI].ask : 0;
       setValueConverted(value * ask);
-      console.log(value * ask)
     }
   }, [data, arrayAPI, value]);
 
   return (
-    <div>
-      <Operator saveData={saveData} />
-      <div className="containerResult">
-          <h3 className="result">
-            {value} {de} equivale a {valueConverted.toFixed(2)} {para}
-          </h3>
+      <div className="containerContent">
+        <Operator saveData={saveData} />
+        <div className="containerResult">
+            <h3 className="result">
+              {valueConverted ? `${value} ${de} equivale a ${valueConverted.toFixed(2)} ${para}` : null}
+            </h3>
+        </div>
       </div>
-    </div>
   )
 }
 

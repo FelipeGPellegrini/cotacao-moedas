@@ -10,8 +10,11 @@ const Operator = ({saveData}) => {
 
   function startConvertion (e) {
     e.preventDefault()
-    console.log(moedaQuantity)
-    saveData(de, para, moedaQuantity)
+    if(de === "" || para === "" || moedaQuantity === undefined) {
+      alert("Revise os campos e tente novamente.")
+    } else {
+      saveData(de, para, moedaQuantity)
+    }
   }
 
   return (
